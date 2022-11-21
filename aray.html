@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nama_siswa =
+        [
+            {
+            nama:"randi",
+            kls:"12",
+            umur:16,
+            nilai:90,
+        },
+        {
+            nama:"perdi",
+            kls:"11",
+            umur:15,
+            nilai:85,
+        }
+         ];
+         
+         //biodata
+         document.write("<h1>lits nama</h1>");
+         document.write("nama ="+nama_siswa[0].nama + "<br />");
+         document.write("kls  ="+nama_siswa[0].kls + "<br />");
+         document.write("umur ="+nama_siswa[0].umur + "<br />");
+         document.write("nilai="+nama_siswa[0].nilai + "<br />");
+         document.write("<hr />")
+         document.write("nama ="+nama_siswa[1].nama + "<br />");
+         document.write("kls  ="+nama_siswa[1].kls + "<br />");
+         document.write("umur ="+nama_siswa[1].umur + "<br />");
+         document.write("nilai="+nama_siswa[1].nilai + "<br />");
+         document.write("<hr />")
+
+         //pengulangan
+         for(i=1;i<=1;i++){
+            document.write("ini pengurangan"+"<br />");
+         }
+         document.write("<hr />");
+
+         //lagi
+         for(i in nama_siswa){
+            document.write(i + "<br />");
+         }
+         nama_siswa.forEach(nama_siswa => {
+            document.write(nama_siswa.nama);
+         });
+         
+    </script>
+</body>
+</html>         

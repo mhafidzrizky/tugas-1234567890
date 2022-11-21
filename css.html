@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var kkm=75;
+    var list_nama=[
+        {
+            nama:"andri",
+            kls:"10",
+            nilai:80,
+            
+            nilai_mtk:75,
+            nilai_binggris:95,
+            nilai_fisika:80,
+            
+        }, 
+        {
+            nama:"verdi",
+            kls:"10",
+            nilai:90,
+            
+            nilai_mtk:71,
+            nilai_binggris:90,
+            nilai_fisika:75,
+            
+        }, 
+        {
+            nama:"candi",
+            kls:"10",
+            nilai:60,
+            
+            nilai_mtk:59,
+            nilai_binggris:30,
+            nilai_fisika:55,
+            
+        }, 
+    ];
+    document.write("<h1>list nama</h1>");
+    list_nama.forEach(nama=>{   
+    
+        document.write("nama ="+nama.nama+"<br />");
+    document.write("kls  ="+nama.kls+"<br />");
+    document.write("nilai="+nama.nilai+"<br />");
+    document.write("nilai mtk="+nama.nilai_mtk+"<br />");
+    document.write("nilai inggris="+nama.nilai_binggris+"<br />");
+    document.write("nilai fisika="+nama.nilai_fisika+"<br />");
+    document.write("status=")
+    if(nama.nilai_mtk>kkm){
+            document.write("lulus")
+        }else{
+            document.write("tidak lulus")
+        }
+        document.write("<hr>")
+        
+        
+    });
+
+    
+
+
+   </script> 
+</body>
+</html>
